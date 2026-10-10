@@ -1,0 +1,403 @@
+<!-- TIPO DE DOCUMENTO, LENGUAJE, RESPONSIVE, NOMBRE PESTAÑA, LINKS -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Lunch Colombia</title>
+
+<!-- LINK BOOTSTRAP CSS -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+
+<!-- LINK FONTAWESOME -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+<!-- LINK FONTAWESONE -->
+
+    <link rel="stylesheet" href="Boots.css">
+</head>
+
+<!-- BARRA DE NAVEGACION, LISTA DESPLEGABLE Y DECLARACION DE BOTONES -->
+
+<body id="inicio">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#inicio">EASY LUNCH</a>
+        <button class="navbar-toggler" type="button" 
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Abrir menú">
+            <span class="navbar-toggler-icon"></span>
+        </button><div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav"><li class="nav-item"><a class="nav-link active"
+                    aria-current="page"
+                    href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#valeras">Valeras</a></li>
+                <li class="nav-item"><a class="nav-link" href="#mivalera">Mi Valera</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- SECCION DE CARRUSEL DE SLIDER -->
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark"data-bs-slide-to="0"class="active"aria-current="true"aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark"data-bs-slide-to="1"aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark"data-bs-slide-to="2"aria-label="Slide 3"></button>
+    </div>
+<div class="carousel-inner">
+
+<!-- IMAGEN 1 -->
+
+<div class="carousel-item active" data-bs-interval="5000">
+    <img src="https://olaclick.com/wp-content/uploads/2024/08/3c374f5e-7408-4233-935d-42edc82eca1c.webp"
+        class="d-block w-100"
+        alt="Almuerzo Easy Lunch">
+    <div class="carousel-caption d-none d-md-block"><div class="fondo-carrusel"><h5>EASY LUNCH</h5><p>Tu almuerzo diario, más organizado.</p></div></div>
+</div>
+
+<!-- IMAGEN 2 -->
+
+<div class="carousel-item" data-bs-interval="10000">
+    <img src="https://designexpress.com.co/wp-content/uploads/2021/02/Talonario-de-comida.jpeg"
+        class="d-block w-100"
+        alt="Valera de almuerzos">
+    <div class="carousel-caption d-none d-md-block"><div class="fondo-carrusel"><h5>VALERA DIGITAL</h5><p>Los papeles se pierden, se mojan, se olvidan</p></div></div>
+</div>
+
+<!-- IMAGEN 3 -->
+
+<div class="carousel-item" data-bs-interval="5000">
+    <img src="https://img.freepik.com/fotos-premium/gente-negocios-almorzando-juntos_13339-15001.jpg"
+        class="d-block w-100"
+        alt="Clientes Easy Lunch">
+    <div class="carousel-caption d-none d-md-block"><div class="fondo-carrusel"><h5>CLIENTES FRECUENTES</h5><p>Organiza tu presupuesto y disfruta de tus almuerzos en Easy Lunch.</p></div></div>
+    </div>
+    <button class="carousel-control-prev"type="button" data-bs-target="#carouselExampleDark"data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next"
+    type="button" data-bs-target="#carouselExampleDark"data-bs-slide="next">
+        <span class="carousel-control-next-icon"aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+
+
+<!-- SECCION NOSOTROS -->
+
+<section id="nosotros" class="py-5">
+
+    <div class="container">
+        <div class="row">
+            <!-- TEXTO -->
+            <div class="col-md-6">
+                <h2>EASY LUNCH</h2>
+                <h5>¿Quiénes somos?</h5>
+                <p>Easy Lunch es una idea que busca recuperar el concepto tradicional de las valeras de almuerzos mediante una alternativa digital para los comensales frecuentes.</p>
+                <p>Nuestro propósito es facilitar la organización de los almuerzos diarios, permitiendo adquirir varios almuerzos mediante un pago anticipado, llevar un mejor control de su utilización, acceder a descuentos y beneficios.</p>
+            </div>
+
+            <!-- IMAGEN -->
+
+            <div class="col-md-4"><img 
+                src="imagenes/logo easy lunch.png"
+                class="img-fluid"
+                alt="Restaurante Easy Lunch">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECCION DE SERVICIOS EN CARDS -->
+
+<section id="servicios" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">NUESTROS SERVICIOS</h2>
+    <div class="row">
+
+<!-- CARD 1 -->
+
+<div class="col-md-4 mb-4">
+    <div class="card h-100" style="width: 100%;">
+        <img src="https://bucket.mlcdn.com/a/3336/3336910/images/7b50fe28314a443bbc4c56fbc34145ab24a94bf7.png"
+        class="card-img-top img-servicio"
+        alt="Valera digital">
+        <div class="card-body">
+            <h5 class="card-title">VALERA DIGITAL</h5>
+            <p class="card-text">Adquiere varios almuerzos mediante un solo pago anticipado.</p>
+            <a href="#valeras" class="btn btn-primary">Ver valeras</a>
+        </div>
+    </div>
+</div>
+
+<!-- CARD 2 -->
+
+<div class="col-md-4 mb-4">
+    <div class="card h-100" style="width: 100%;">
+        <img src="https://content.elmueble.com/medio/2021/01/25/crema-de-puerros-0520767_3fe4498f_900x1293.jpg"
+        class="card-img-top img-servicio"
+        alt="Almuerzo Easy Lunch">
+    <div class="card-body">
+        <h5 class="card-title">ALMUERZOS</h5><p class="card-text">Disfruta tus almuerzos en Easy Lunch disponibles en tu valera.</p><a href="#valeras" class="btn btn-primary">Ver valeras</a>
+        </div>
+    </div>
+</div>
+
+<!-- CARD 3 -->
+
+<div class="col-md-4 mb-4">
+    <div class="card h-100" style="width: 100%;">
+        <img src="https://www.las2orillas.co/wp-content/uploads/2023/09/almuerzos-gratis-para-empleados.jpg"            
+        class="card-img-top img-servicio"
+        alt="Clientes frecuentes">
+        <div class="card-body"><h5 class="card-title">AGENDA PERSONAL</h5>
+            <p class="card-text">Consulta tus almuerzos adquiridos, utilizados y disponibles.</p>
+            <a href="#mivalera" class="btn btn-primary">Mi valera</a></div>
+        </div>
+    </div>
+</section>
+
+<!-- SECCION DE VALERAS -->
+
+<div class="container my-5" id="valeras">
+
+<!-- Encabezado de la Sección -->
+
+    <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-3">
+        <div>
+            <h2 class="fw-bold mb-0 text-dark">Valeras Easy Lunch</h2>
+            <p class="text-muted mb-0">Escoge el plan de almuerzos que mejor se adapte a tus necesidades.</p>
+        </div>
+        <a href="#contacto" class="btn btn-outline-primary btn-sm rounded-pill px-3">Más información</a>
+    </div>
+
+<!-- Rejilla de Cards -->
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+<!-- VALERA 10 ALMUERZOS -->
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm card-oferta">
+                <span class="badge bg-primary badge-descuento rounded-pill">
+                    Plan Básico</span>
+                <img src="https://tse1.mm.bing.net/th/id/OIP.OiExEJBbZXoeskNjgXzLtgHaEL?r=0&pid=Api&h=220&P=0"
+                    class="card-img-top p-3 rounded-4"
+                    alt="">
+                <div class="card-body d-flex flex-column">
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1">
+                        Easy Lunch</span>
+                    <h5 class="card-title fw-bold text-dark mb-2">Valera 10 Almuerzos</h5>
+                    <p class="card-text text-muted small flex-grow-1">Adquiere 10 almuerzos mediante un solo pago y utilízalos durante tus visitas a Easy Lunch.</p>
+                    <div class="mb-3">
+                        <span class="precio-actual">$170.000</span>
+                    </div>
+                    <a href="#carrito" class="btn btn-primary w-100 fw-bold">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+<!-- VALERA 15 ALMUERZOS -->
+
+<div class="col">
+    <div class="card h-100 border-0 shadow-sm card-oferta">
+            <span class="badge bg-primary badge-descuento rounded-pill">Plan Frecuente</span>
+                <img src="https://static.wixstatic.com/media/eaeea5_47d89ae4ce50417e8d42988afbeefac8~mv2.jpg/v1/fill/w_980,h_550,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/eaeea5_47d89ae4ce50417e8d42988afbeefac8~mv2.jpg"class="card-img-top p-3 rounded-4"alt="">
+            <div class="card-body d-flex flex-column">
+                    <span class="text-uppercase text-muted fs-7 fw-bold mb-1">Easy Lunch</span>
+                    <h5 class="card-title fw-bold text-dark mb-2">Valera 15 Almuerzos</h5>
+                <p class="card-text text-muted small flex-grow-1">Adquiere 15 almuerzos por anticipado y organiza mejor tu presupuesto de alimentación.</p>
+            <div class="mb-3"><span class="precio-actual">$255.000 </span>
+            </div><a href="#carrito" class="btn btn-primary w-100 fw-bold">Agregar al carrito</a>
+        </div>
+    </div>
+</div>
+
+<!-- VALERA 20 ALMUERZOS -->
+
+<div class="col">
+    <div class="card h-100 border-0 shadow-sm card-oferta">
+        <span class="badge bg-primary badge-descuento rounded-pill">Plan Frecuente</span>
+        <img src="https://wallpapers.com/images/featured/imagenes-de-almuerzo-9cmknv3dtty50fhf.jpg"
+        class="card-img-top p-3 rounded-4"
+        alt="">
+        <div class="card-body d-flex flex-column"><span class="text-uppercase text-muted fs-7 fw-bold mb-1">Easy Lunch</span>
+                <h5 class="card-title fw-bold text-dark mb-2">Valera 20 Almuerzos</h5>
+                <p class="card-text text-muted small flex-grow-1">Adquiere 20 almuerzos por anticipado y asegura tu presupuesto para varios días.</p>
+                <div class="mb-3"><span class="precio-actual">$340.000</span></div>
+                <a href="#carrito" class="btn btn-primary w-100 fw-bold">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- SECCION MI VALERA -->
+
+<section id="mivalera" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">MI VALERA</h2>
+        <p class="text-center">Ejemplo del control de una valera adquirida.</p>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <h5>Almuerzos adquiridos</h5>
+                        <h2>20</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <h5>Almuerzos utilizados</h5>
+                        <h2>7</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <h5>Almuerzos disponibles</h5>
+                        <h2>13</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECCION CARRO DE COMPRAS -->
+
+<section id="carrito" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Revisa tu compra</h2>
+        <div class="card"><div class="card-body"><h5 class="card-title">Valera 20 Almuerzos</h5>
+                <p class="card-text">Plan seleccionado: 20 almuerzos.</p>
+                <p>Cantidad: 1</p>
+                <h4>Total: $340.000</h4>
+                <a href="#contacto" class="btn btn-primary">Confirmar pedido</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- SECCION IDEAS DE ALMUERZO -->
+
+<section class="bg-white py-5">
+    <div class="container">
+        <h2 class="text-center">Ideas de almuerzo</h2>
+        <p class="text-center">
+            Algunas ideas de almuerzos que podrían formar parte de Easy Lunch.
+        </p>
+        <div class="marquee">
+            <div class="marquee-content d-flex align-items-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrtx13NULJpVAp47VZvr_Ot0JN0syib2BCUr0lUyBDJA&s=10"
+                    alt="Almuerzo casero"
+                    class="mx-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIFPEqAaiH1ZsdVEDC7yffjj6ezi3ZSKhsf0xQURaRVA&s=10"
+                    alt="Almuerzo con vegetales"
+                    class="mx-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKBOO7TwIYPUx91gFny9RFX5Xs3hXltVP54bvaRZEreg&s=10"
+                    alt="Almuerzo con pasta"
+                    class="mx-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLHlKjNRPCX74Dmf5Dt1xY7W2SahrSvJXDQM1Olr7TQ&s=10"
+                    alt="Almuerzo ejecutivo"
+                    class="mx-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4cNYahetK15sgmoc3dLzlNNa6tyS9_002rm64wuOMtA&s=10"
+                    alt="Almuerzo saludable"
+                    class="mx-4">
+
+<!-- SEGUNDO BLOQUE DE IMAGENES -->
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO3CZXyQ1UsokSz2FQzr1RLrfqxAW7GXrEgKjCKKFYhg&s=10"
+                    alt="Almuerzo casero"
+                    class="mx-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGSN0Sip8uuKTm-KHrGPG-51i9A8_r4Rmq2PQ4gjrU2A&s=10"
+                    alt="Almuerzo con vegetales"
+                    class="mx-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjPDlo4HID-aBM-RO6dxGUCZ1yFM7YZId7dvYWz48X0g&s=10"
+                    alt="Almuerzo con pasta"
+                    class="mx-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT7ipbc90p1cvRqCZY-RFuVdbDzlRx60b0y7_ZyYz1sA&s=10"
+                    alt="Almuerzo ejecutivo"
+                    class="mx-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT7ipbc90p1cvRqCZY-RFuVdbDzlRx60b0y7_ZyYz1sA&s=10"
+                    alt="Almuerzo saludable"
+                    class="mx-4">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECCION DE MAPA Y FORMULARIO DE CONTACTO -->
+
+<section id="contacto" class="bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h2>Contacto</h2>
+                <p>Formulario de clase: permite probar campos obligatorios. No envía solicitudes ni guarda información.</p>
+                <form action="#contacto">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" name="" id="nombre" class="form-control" required>
+                        <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea id="mensaje" rows="5" class="form-control" required></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                        <label class="form-check-label" for="exampleCheck1">Acepto realizar la prueba del formulario</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Probar formulario</button>
+                </form>
+            </div>
+
+<!-- SECCION DE MAPA -->
+
+            <div class="col-md-6">
+                <h5 class="mb-3">Ubicación de la Empresa</h5>
+                <p></p>
+                <iframe title="Mapa de Plaza de las Américas, ejemplo de clase" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15907.461100489498!2d-74.14545688309016!3d4.618113226014286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ebaca191fa3%3A0x28079add05f37b00!2sCentro%20Comercial%20Plaza%20de%20las%20Am%C3%A9ricas!5e0!3m2!1ses-419!2sco!4v1791043556667!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER  -->
+
+<footer class="bg-dark text-white text-center py-4">
+
+    <p class="mb-2">&copy; Easy Lunch - Proyecto académico de Mauricio Forero</p>
+    <div class="social-icons"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i>
+        </a><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.tiktok.com/es/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+</footer>
+        <!-- LINK BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+</html>
